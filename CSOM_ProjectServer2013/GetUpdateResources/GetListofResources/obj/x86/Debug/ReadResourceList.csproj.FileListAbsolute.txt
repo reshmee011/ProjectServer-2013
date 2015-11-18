@@ -1,0 +1,16 @@
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetListofResources\GetListofResources\bin\Debug\ReadProjectList.exe.config
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetListofResources\GetListofResources\bin\Debug\ReadProjectList.exe
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetListofResources\GetListofResources\bin\Debug\ReadProjectList.pdb
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetListofResources\GetListofResources\obj\x86\Debug\ReadResourceList.csprojResolveAssemblyReference.cache
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetListofResources\GetListofResources\obj\x86\Debug\ReadResourceList.csproj.GenerateResource.Cache
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetListofResources\GetListofResources\obj\x86\Debug\ReadProjectList.exe
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetListofResources\GetListofResources\obj\x86\Debug\ReadProjectList.pdb
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetListofResources\GetListofResources\obj\x86\Debug\UpdateResourceName.Form1.resources
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\bin\Debug\ReadProjectList.exe.config
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\obj\x86\Debug\ReadProjectList.exe
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\obj\x86\Debug\ReadProjectList.pdb
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\bin\Debug\ReadProjectList.exe
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\bin\Debug\ReadProjectList.pdb
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\obj\x86\Debug\ReadResourceList.csprojResolveAssemblyReference.cache
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\obj\x86\Debug\UpdateResourceName.Form1.resources
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\obj\x86\Debug\ReadResourceList.csproj.GenerateResource.Cache

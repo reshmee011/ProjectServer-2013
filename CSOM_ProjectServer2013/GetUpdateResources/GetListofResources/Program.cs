@@ -1,0 +1,140 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+//using Microsoft.SharePoint.Client;
+using Microsoft.ProjectServer.Client;
+
+namespace ReadProjectList
+{
+    class Program
+    {
+        private const string pwaPath = "https://radev.support.cps.co.uk/PWA/";    // Change the path for Project Web App.
+        
+        // Set the Project Server client context.
+        private static ProjectContext projContext;
+
+        // For applications that access both the Project Server CSOM and the SharePoint CSOM, you could
+        // use the ProjectServer object. Those statements are commented out in this application.
+        // However, it is not necessary to instantiate a ProjectServer object, because the the 
+        // ProjectContext object inherits from ClientContext in SharePoint.
+            //private static ProjectServer projSvr;
+            //private static ClientRuntimeContext context;
+
+        static void Main(string[] args)
+        {
+            projContext = new ProjectContext(pwaPath); 
+                //context = new ClientContext(pwaPath);
+                //projSvr = new ProjectServer(context);
+           // string userName = "reshmeeauckloo";
+            //GUID for reshmee auckloo
+            Guid resUID = new Guid("02C5EE34-5CE8-E411-80C1-00155D640C06");
+            string customFieldName = "Staff Number";
+            string customFieldValue = "000000";
+            // Get the list of published projects in Project Web App.
+            projContext.Load(projContext.EnterpriseResources);
+            projContext.Load(projContext.CustomFields);
+
+            projContext.ExecuteQuery();
+                //context.Load(projSvr.Projects);
+                //context.ExecuteQuery();
+
+            Console.WriteLine("\nResource ID : Resource name ");
+
+                //foreach (PublishedProject pubProj in projSvr.Projects)
+            foreach (EnterpriseResource res in projContext.EnterpriseResources)
+            {
+                Console.WriteLine("\n\t{0}\n\t{1}", res.Id.ToString(), res.Name);
+            }
+
+
+            int numResInCollection = projContext.EnterpriseResources.Count();
+              var usrs = projContext.Web.SiteUsers;
+             // var usr = string.IsNullOrEmpty(userName) ? projContext.Web.CurrentUser : usrs.GetByLoginName());
+
+            if (numResInCollection > 0)
+            {
+                projContext.Load(projContext.EnterpriseResources.GetByGuid(resUID));
+                projContext.Load(projContext.EntityTypes.ResourceEntity);
+                projContext.ExecuteQuery();
+
+                var entRes2Edit = projContext.EnterpriseResources.GetByGuid(resUID);
+
+                var userCustomFields = entRes2Edit.CustomFields;
+
+                Guid ResourceEntityUID = projContext.EntityTypes.ResourceEntity.ID;
+
+               var customfield = projContext.CustomFields.Where(x => x.Name == customFieldName);
+
+                //cFcI.
+               //item exists
+              // if (userCustomField.Count > 0)
+               //{
+                   entRes2Edit[customfield.First().InternalName] = "3456";
+               //}
+
+
+                //.GetByGuid(new Guid("5d63d36b-216f-e411-80c3-00155de3ed10"));
+                //CustomFieldDataSet customFieldDs = customFieldsClient.ReadCustomFieldsByEntity(new Guid(ResourceEntity));
+
+                //string filter = string.Format("{0}='{1}'", customFieldDs.CustomFields.MD_PROP_NAMEColumn.ColumnName, fieldName);
+                //foreach (CustomFieldDataSet.CustomFieldsRow row in customFieldDs.CustomFields.Select(filter))
+                //{
+                //    filter = string.Format("{0}='{1}' AND {2}='{3}'", resourceDs.ResourceCustomFields.RES_UIDColumn.ColumnName, resourceUid, resourceDs.ResourceCustomFields.MD_PROP_UIDColumn.ColumnName, row.MD_PROP_UID);
+                //    ResourceDataSet.ResourceCustomFieldsRow[] customFieldRows = (ResourceDataSet.ResourceCustomFieldsRow[])resourceDs.ResourceCustomFields.Select(filter);
+
+                //    if (customFieldRows.Length > 0)
+                //    {
+                //        foreach (ResourceDataSet.ResourceCustomFieldsRow customFieldRow in customFieldRows)
+                //        {
+                //            customFieldRow.TEXT_VALUE = fieldValue;
+                //        }
+                //    }
+                //    else
+                //    {
+                //        SetResourceCustomFieldValue(resourceDs, row.MD_PROP_UID, resourceUid, fieldValue);
+                //    }
+                //}
+                //customFieldDs.Dispose();
+
+
+                //check whether customField is present, if yes, update else create new
+                //entRes2Edit.CustomFields.
+
+                Console.WriteLine("\nEditing resource : GUID : Can Level");
+                Console.WriteLine("\n{0} : {1} : {2}", entRes2Edit.Name, entRes2Edit.Id.ToString(),
+                    entRes2Edit.CanLevel.ToString());
+
+                // Toggle the CanLevel property.
+                entRes2Edit.CanLevel = !entRes2Edit.CanLevel;
+
+                // The entRes2Edit object is in the EnterpriseResources collection.
+                projContext.EnterpriseResources.Update();
+
+                // Save the change.
+                projContext.ExecuteQuery();
+
+                // Check that the change was made.
+                projContext.Load(projContext.EnterpriseResources.GetByGuid(resUID));
+                projContext.ExecuteQuery();
+
+                entRes2Edit = projContext.EnterpriseResources.GetByGuid(resUID);
+
+                Console.WriteLine("\n\nChanged resource : GUID : Can Level");
+                Console.WriteLine("\n{0} : {1} : {2}", entRes2Edit.Name, entRes2Edit.Id.ToString(),
+                    entRes2Edit.CanLevel.ToString());
+            }
+
+            Console.Write("\nPress any key to exit: ");
+            Console.ReadKey(false);
+
+           
+        }
+
+        private static string GetFullUserName(string userName)
+        {
+            return string.Format("i:0#.f|membership|{0}\\{1}", userName,"cps");
+        }
+
+    }
+}

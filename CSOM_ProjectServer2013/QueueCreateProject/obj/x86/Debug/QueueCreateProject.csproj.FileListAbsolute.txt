@@ -1,0 +1,5 @@
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\QueueCreateProject\bin\Debug\QueueCreateProject.exe.config
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\QueueCreateProject\bin\Debug\QueueCreateProject.exe
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\QueueCreateProject\bin\Debug\QueueCreateProject.pdb
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\QueueCreateProject\obj\x86\Debug\QueueCreateProject.exe
+C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\QueueCreateProject\obj\x86\Debug\QueueCreateProject.pdb
