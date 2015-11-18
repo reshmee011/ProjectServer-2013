@@ -1,6 +1,0 @@
-C:\Program Files (x86)\Microsoft SDKs\Project 2013\Samples\CSOM\ReadProjectList\bin\Debug\ReadProjectList.exe.config
-C:\Program Files (x86)\Microsoft SDKs\Project 2013\Samples\CSOM\ReadProjectList\bin\Debug\ReadProjectList.exe
-C:\Program Files (x86)\Microsoft SDKs\Project 2013\Samples\CSOM\ReadProjectList\bin\Debug\ReadProjectList.pdb
-C:\Program Files (x86)\Microsoft SDKs\Project 2013\Samples\CSOM\ReadProjectList\obj\x86\Debug\ReadProjectList.csprojResolveAssemblyReference.cache
-C:\Program Files (x86)\Microsoft SDKs\Project 2013\Samples\CSOM\ReadProjectList\obj\x86\Debug\ReadProjectList.exe
-C:\Program Files (x86)\Microsoft SDKs\Project 2013\Samples\CSOM\ReadProjectList\obj\x86\Debug\ReadProjectList.pdb
