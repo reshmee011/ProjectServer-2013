@@ -14,3 +14,17 @@ C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer
 C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\obj\x86\Debug\ReadResourceList.csprojResolveAssemblyReference.cache
 C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\obj\x86\Debug\UpdateResourceName.Form1.resources
 C:\Users\reshmeeauckloo\Documents\Visual Studio 2012\Projects\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\obj\x86\Debug\ReadResourceList.csproj.GenerateResource.Cache
+C:\Users\reshmeeauckloo\Documents\GitHub\ProjectServer\ProjectServer-2013\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\bin\Debug\ReadProjectList.exe.config
+C:\Users\reshmeeauckloo\Documents\GitHub\ProjectServer\ProjectServer-2013\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\obj\x86\Debug\ReadProjectList.exe
+C:\Users\reshmeeauckloo\Documents\GitHub\ProjectServer\ProjectServer-2013\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\obj\x86\Debug\ReadProjectList.pdb
+C:\Users\reshmeeauckloo\Documents\GitHub\ProjectServer\ProjectServer-2013\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\bin\Debug\ReadProjectList.exe
+C:\Users\reshmeeauckloo\Documents\GitHub\ProjectServer\ProjectServer-2013\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\bin\Debug\ReadProjectList.pdb
+C:\Users\reshmeeauckloo\Documents\GitHub\ProjectServer\ProjectServer-2013\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\bin\Debug\Microsoft.ProjectServer.Client.dll
+C:\Users\reshmeeauckloo\Documents\GitHub\ProjectServer\ProjectServer-2013\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\bin\Debug\Microsoft.SharePoint.Client.dll
+C:\Users\reshmeeauckloo\Documents\GitHub\ProjectServer\ProjectServer-2013\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\reshmeeauckloo\Documents\GitHub\ProjectServer\ProjectServer-2013\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\bin\Debug\Microsoft.ProjectServer.Client.xml
+C:\Users\reshmeeauckloo\Documents\GitHub\ProjectServer\ProjectServer-2013\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\bin\Debug\Microsoft.SharePoint.Client.xml
+C:\Users\reshmeeauckloo\Documents\GitHub\ProjectServer\ProjectServer-2013\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\bin\Debug\Microsoft.SharePoint.Client.Runtime.xml
+C:\Users\reshmeeauckloo\Documents\GitHub\ProjectServer\ProjectServer-2013\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\obj\x86\Debug\ReadResourceList.csprojResolveAssemblyReference.cache
+C:\Users\reshmeeauckloo\Documents\GitHub\ProjectServer\ProjectServer-2013\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\obj\x86\Debug\UpdateResourceName.Form1.resources
+C:\Users\reshmeeauckloo\Documents\GitHub\ProjectServer\ProjectServer-2013\CSOM_ProjectServer2013\GetUpdateResources\GetListofResources\obj\x86\Debug\ReadResourceList.csproj.GenerateResource.Cache

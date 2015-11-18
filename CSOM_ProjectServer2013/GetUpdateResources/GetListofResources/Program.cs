@@ -66,40 +66,7 @@ namespace ReadProjectList
 
                var customfield = projContext.CustomFields.Where(x => x.Name == customFieldName);
 
-                //cFcI.
-               //item exists
-              // if (userCustomField.Count > 0)
-               //{
-                   entRes2Edit[customfield.First().InternalName] = "3456";
-               //}
-
-
-                //.GetByGuid(new Guid("5d63d36b-216f-e411-80c3-00155de3ed10"));
-                //CustomFieldDataSet customFieldDs = customFieldsClient.ReadCustomFieldsByEntity(new Guid(ResourceEntity));
-
-                //string filter = string.Format("{0}='{1}'", customFieldDs.CustomFields.MD_PROP_NAMEColumn.ColumnName, fieldName);
-                //foreach (CustomFieldDataSet.CustomFieldsRow row in customFieldDs.CustomFields.Select(filter))
-                //{
-                //    filter = string.Format("{0}='{1}' AND {2}='{3}'", resourceDs.ResourceCustomFields.RES_UIDColumn.ColumnName, resourceUid, resourceDs.ResourceCustomFields.MD_PROP_UIDColumn.ColumnName, row.MD_PROP_UID);
-                //    ResourceDataSet.ResourceCustomFieldsRow[] customFieldRows = (ResourceDataSet.ResourceCustomFieldsRow[])resourceDs.ResourceCustomFields.Select(filter);
-
-                //    if (customFieldRows.Length > 0)
-                //    {
-                //        foreach (ResourceDataSet.ResourceCustomFieldsRow customFieldRow in customFieldRows)
-                //        {
-                //            customFieldRow.TEXT_VALUE = fieldValue;
-                //        }
-                //    }
-                //    else
-                //    {
-                //        SetResourceCustomFieldValue(resourceDs, row.MD_PROP_UID, resourceUid, fieldValue);
-                //    }
-                //}
-                //customFieldDs.Dispose();
-
-
-                //check whether customField is present, if yes, update else create new
-                //entRes2Edit.CustomFields.
+               entRes2Edit[customfield.First().InternalName] = "3456";
 
                 Console.WriteLine("\nEditing resource : GUID : Can Level");
                 Console.WriteLine("\n{0} : {1} : {2}", entRes2Edit.Name, entRes2Edit.Id.ToString(),
