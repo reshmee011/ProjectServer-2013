@@ -18,8 +18,7 @@ namespace ReadProjectList
         // use the ProjectServer object. Those statements are commented out in this application.
         // However, it is not necessary to instantiate a ProjectServer object, because the the 
         // ProjectContext object inherits from ClientContext in SharePoint.
-            //private static ProjectServer projSvr;
-            //private static ClientRuntimeContext context;
+        
 
         static void Main(string[] args)
         {
@@ -30,27 +29,17 @@ namespace ReadProjectList
             //GUID for reshmee auckloo
             Guid resUID = new Guid("02C5EE34-5CE8-E411-80C1-00155D640C06");
             string customFieldName = "Staff Number";
-            string customFieldValue = "000000";
-            // Get the list of published projects in Project Web App.
+        
+            // Get the list of resources from Project Web App.
             projContext.Load(projContext.EnterpriseResources);
             projContext.Load(projContext.CustomFields);
 
             projContext.ExecuteQuery();
-                //context.Load(projSvr.Projects);
-                //context.ExecuteQuery();
-
+             
             Console.WriteLine("\nResource ID : Resource name ");
-
-                //foreach (PublishedProject pubProj in projSvr.Projects)
-            foreach (EnterpriseResource res in projContext.EnterpriseResources)
-            {
-                Console.WriteLine("\n\t{0}\n\t{1}", res.Id.ToString(), res.Name);
-            }
-
 
             int numResInCollection = projContext.EnterpriseResources.Count();
               var usrs = projContext.Web.SiteUsers;
-             // var usr = string.IsNullOrEmpty(userName) ? projContext.Web.CurrentUser : usrs.GetByLoginName());
 
             if (numResInCollection > 0)
             {
@@ -96,11 +85,6 @@ namespace ReadProjectList
             Console.ReadKey(false);
 
            
-        }
-
-        private static string GetFullUserName(string userName)
-        {
-            return string.Format("i:0#.f|membership|{0}\\{1}", userName,"cps");
         }
 
     }
